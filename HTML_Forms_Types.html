@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form Types</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <h1>Types of HTML Form Elements</h1>
+
+    <!-- Form Start -->
+    <form action="receiving_script.php">
+      <!-- Input type text elements -->
+      <p>--- Input type text elements ---</p>
+
+      <!-- Table for text inputs -->
+      <table border="0">
+        <tr>
+          <td align="right">User name :</td>
+          <td><input type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <td align="right">Password :</td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td align="right">Please enter your email :</td>
+          <td><input type="email" name="email" id="email" /></td>
+        </tr>
+      </table>
+
+      <!-- Multi Line Text elements -->
+      <p>
+        --- Multi Line Text elements --- <br />
+        <textarea
+          name="multiline_text"
+          id="multiline_text"
+          cols="20"
+          rows="5"
+        ></textarea>
+      </p>
+
+      <!-- Radio buttons (limits user entries to one selection) -->
+      <p>--- Radio buttons (limits user entries to one selection) ---</p>
+      <p>
+        Who would you date ? : <br />
+        <input type="radio" name="datewho" id="radiooption1" /> Raj <br />
+        <input type="radio" name="datewho" id="radiooption2" /> Acap <br />
+        <input type="radio" name="datewho" id="radiooption3" /> Kun Chiong
+        <br />
+        <input type="radio" name="datewho" id="radiooption4" /> Shawn
+      </p>
+
+      <!-- Checkboxes (multiple selections are permitted) -->
+      <p>--- Checkboxes (multiple selections are permitted) ---</p>
+      <p>
+        What do you do on a date ?<br />
+        <input type="checkbox" name="date_activity" id="activity1" />
+        Candlelight Dinner <br />
+        <input type="checkbox" name="date_activity" id="activity2" /> Movies
+        <br />
+        <input type="checkbox" name="date_activity" id="activity3" /> Lunch
+        <br />
+        <input type="checkbox" name="date_activity" id="activity4" /> Kite
+        Flying
+      </p>
+
+      <!-- Drop-Down List (Select Options) -->
+      <p>--- Drop-Down List (Select Options) ----</p>
+      <p>
+        Which country do you come from ?
+        <select name="country" id="country">
+          <option value="Singapore">Singapore</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Korea">Korea</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </p>
+
+      <!-- Form Submission Buttons -->
+      <p>
+        <input type="submit" value="Process Form" />
+        <input type="reset" value="Reset Form" />
+      </p>
+    </form>
+    <!-- Form End -->
+  </body>
+</html>
