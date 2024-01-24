@@ -1,5 +1,5 @@
 <!--There are 3 ways to incorporate CSS.
-1)In-Line: In HTML code itself
+1)In-Line: In HTML code itself and takes precedence over internal and external
 2)Internal: In HTML but its predefined for the whole document just like a global rule
 3)External: Using a .css file, which is the industry way of doing it.-->
 <!DOCTYPE html>
@@ -10,22 +10,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to CSS</title>
     <style>
-        /* Internal CSS */
+        /* Internal CSS and also below is an example of global styling */
         h2 {
             color: red;
         }
 
-            #hello {
+        #hello {
             color: blue;
             font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        #p01 {
+            color: red;
+            border: black;
+        }
+
+        #enson {
+            color: orange;
         }
     </style>
 </head>
 
 <body>
 
-    <span id="hello" <h1>Hello There!</h1>
+    <span id="hello"></span>
+    <a href="http://google.com">Link to Somewhere</a>
 
+    <h1>This is a heading</h1>
+
+    <!--this is a custom id for selective css formatting-->
+    <!--anything starting with a hashtag is a defined custom id-->
+    <p id="p01">This is a paragraph</p>
+
+    <p>This is a paragraph</p>
+
+    <p>This is a paragraph</p>
+
+    <h3 id="enson">This Class is Quiet Today</h3>
+
+    <p id="enson">Hello Everyone</p>
+
+    <div id="enson">
+        text is formatted using div
+    </div>
+    <br />
+
+    <span id="enson">This text is formatted using span</span>
+    <!--A div element is used for block-level organization and styling of page elements, whereas a span element is used for inline organization and styling-->
 
 
 
