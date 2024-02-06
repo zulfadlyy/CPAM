@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #result {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    </p>
+    <form id="calculatorForm">
+        1st Number : <input type="number" id="firstNumber" required><br>
+        2nd Number: <input type="number" id="secondNumber" required></p>
+        <button type="button" id="multiplyButton">Multiply</button>
+        <button type="button" id="divideButton">Divide</button>
+    </form>
+    <br />
+    The Result Is:<div id="result"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get references to the elements
+            var firstNumberInput = document.getElementById("firstNumber");
+            var secondNumberInput = document.getElementById("secondNumber");
+            var multiplyButton = document.getElementById("multiplyButton");
+            var divideButton = document.getElementById("divideButton");
+            var resultDiv = document.getElementById("result");
+
+            // Function to perform multiplication
+            function multiplyNumbers() {
+                var result = parseFloat(firstNumberInput.value) * parseFloat(secondNumberInput.value);
+                displayResult(result);
+            }
+
+            // Function to perform division
+            function divideNumbers() {
+                var result = parseFloat(firstNumberInput.value) / parseFloat(secondNumberInput.value);
+                displayResult(result);
+            }
+
+            // Function to display the result
+            function displayResult(result) {
+                resultDiv.innerHTML = result;
+            }
+
+            // Attach click event listeners to the buttons
+            multiplyButton.addEventListener("click", multiplyNumbers);
+            divideButton.addEventListener("click", divideNumbers);
+        });
+    </script>
+</body>
+
+</html>
