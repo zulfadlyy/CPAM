@@ -1,0 +1,6 @@
+Website should consists of at least 3 html pages or more with the following:
+•	Home - Company’s banner (CPAM-BizHub) and background of the company (index.html)
+•	Our Service (Services.html)
+•	Online Purchase Form (Form.html) with radio button or checkbox, text or drop down list
+•	Other webpages which is/are necessary
+4.	Any additional hardware which is/are necessary.
