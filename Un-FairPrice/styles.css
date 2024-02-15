@@ -85,3 +85,21 @@ header {
   margin-right: auto;
   width: 50%;
 }
+  /* Optional: Add some basic styling */
+  button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  /* Center the text within the input field */
+  #numberField {
+    text-align: center;
+    width: 50px;
+  }
+  .Product {
+    border: 1px;
+    text-align: center;
+    
+    
+  }
