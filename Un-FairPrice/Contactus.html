@@ -39,10 +39,46 @@
     </nav>
 
     <section>
-        <h2>Welcome to</h2>
-        <p>Welcome to Un-FairPrice, your #1 Grocery Retailer.</p>
+        <form action="" method="post">
+        <H2>We appreciate your feedback!</H2>
+        For urgent matters, 
+        <a href = "mailto: CustomerService@unfairprice.com.sg">please email us.</a>
+        <Fieldset>
+            <Legend><h3>Feedback Form</h3> </Legend>
+                
+                    <b>Personal Particulars:</b> 
+                    <p></p>
+                    Salutations:
+                    <select name="Channel" id="">
+                      <option value="">Select answer</option>
+                      <option value="Mr">Mr.</option>
+                      <option value="Mrs">Mrs.</option>
+                      <option value="Miss">Miss.</option>
+                      <option value="Mdm">Mdm.</option>
+                      <option value="Dr">Dr.</option>
+                    </select>
+                    </p>
+                    Full Name: <input type="text" id="" placeholder="John Smith">
+                    
+                    Contact No. <input type="text" name="" id="" placeholder="+65 XXXXXXXX">
+                    <label for="start">Date of birth:</label> <input type="date" id="start" name="DOB" value="2024-01-01" min="today" max="2999-12-31" />
+                    </p>
+                    Type of Feedback: <p></p>
+                    <input type="radio" value="Compliment"> Compliment
+                    <p></p>
+                    <input type="radio" value="Complaint"> Complaint
+                    <p></p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Insert Description here.."></textarea>
+                    <p></p>
+                    <input type="submit" onclick="feedback()"> <input type="reset">
+                    
+        </Fieldset>
+        </form>
+        <p></p>
+        
     </section>
-
+   
+    
     <footer>
         <p>&copy; 2024 Un-FairPrice. All rights reserved.</p>
     </footer>

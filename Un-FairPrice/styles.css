@@ -112,3 +112,13 @@ header {
       height: auto; /* Maintain aspect ratio */
       margin-bottom: 10px; /* Add spacing between images */
   }
+  label {
+    display: block;
+    
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 0;
+  }
+  

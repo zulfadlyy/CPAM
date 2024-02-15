@@ -13,4 +13,6 @@ var numberField = document.getElementById('numberField');
         numberField.value = currentValue - 1;
       }
     }
-    
+    function feedback() {
+      alert("Thank you for your Feedback");
+    }
