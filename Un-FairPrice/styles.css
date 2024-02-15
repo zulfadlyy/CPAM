@@ -98,8 +98,17 @@ header {
     width: 50px;
   }
   .Product {
-    border: 1px;
     text-align: center;
-    
-    
+    width: fit-content;
+  }
+    /* Define styles for the image container */
+    #image-container {
+      display: none; /* Initially hide the image container */
+  }
+
+  /* Define styles for the images */
+  img {
+      max-width: 100%; /* Ensure images don't exceed container width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Add spacing between images */
   }

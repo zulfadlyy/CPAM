@@ -13,3 +13,4 @@ var numberField = document.getElementById('numberField');
         numberField.value = currentValue - 1;
       }
     }
+    
