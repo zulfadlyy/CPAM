@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration E-Form</title>
+    <script>
+      function registration() {
+        alert("Thank you for your registration!");
+    }  
+    </script>
+    
+</head>
+<body>
+    <H1>Please complete the following E-Form</H1>
+    </p>
+    <Fieldset>
+        <legend>
+            <h2>
+                Welcome to CPAM ELearning Hub
+            </h2>
+        </legend>
+        <strong>All fields are required.</strong>
+        </p>
+        Name: <input style="width: 300px;" type="text" name="FullName" id="" placeholder="Enter your name">
+        </p>
+        Telephone: <input style="width: 310px;" type="text" name="ContactNo" id="" placeholder="+65 XXXXXXXX">
+        </p>
+        E-mail address: <input style="width: 320px;" type="text" name="EmailAdd" id="" placeholder="CPAM@gmail.com">
+        </p>
+        <b>Please select which CMS you prefer:</b>
+        <br>
+        <input type="radio"> WordPress </br>
+        </p>
+        <input type="radio"> Joomla </br>
+    </Fieldset>
+    <fieldset>
+        Check All That Apply
+        </p>
+        <input type="checkbox"> If you want our updates through email <br>
+          <input type="checkbox"> If you want our updates throu sms <br>
+          <input type="checkbox"> If you want our updates throu post <br>
+          </p>
+          <input type="submit" value="Register" onclick="registration()" />
+    </fieldset>
+</body>
+</html>
